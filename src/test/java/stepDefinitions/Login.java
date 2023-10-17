@@ -17,9 +17,10 @@ public class Login
 	{
 	System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver.exe");
 	 driver= new ChromeDriver();
-	 Thread.sleep(2000);
+	 Thread.sleep(4000);
 	driver.manage().window().maximize();
 	driver.get("https://www.trivago.in/");
+	Thread.sleep(2000);
 	
 	}
 	
@@ -34,7 +35,7 @@ public class Login
 	@Then ("location should be accepted")
 	public void location_should_be_accepted()
 	{
-		
+		System.out.println("Good change");
 	}
 	
 	
@@ -49,7 +50,7 @@ public class Login
 	@Then("Calender should be displayed")
 	public void calender_should_be_displayed() 
 	{
-	    
+	    System.out.println("Bad change");
 	}
     
 	@When("user select one date")
